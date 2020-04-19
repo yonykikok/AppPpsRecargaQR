@@ -1,0 +1,126 @@
+.background-image{
+    --background:none;
+    width: 100%;
+     background: url("../../assets/images/Sea.jpg") no-repeat center center / cover;
+}
+ion-content{
+    text-align: center;;
+}
+.inputLogin{
+    text-align: center;
+   border-radius: 30px;
+}
+#scanerQr{
+    position: absolute;
+    margin-left: 35%;
+    top: 3em;
+    width: 15em;
+    height: 15em;
+    transform: rotateY(46deg)
+}
+ion-card-header{
+  
+    p{
+        color:rgb(24, 102, 248);
+        font-size: 2em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+    }
+    h1{
+        color:rgb(0, 247, 255);
+        font-size: 2em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  
+    }
+}
+.border-radius{
+    border-radius: 10px;
+    padding: 0px;
+}
+input
+{
+    border-radius: 50px;
+}
+.card-backgroud{
+    background-color: rgba($color: #f0ebebd8, $alpha: 0.3);
+    padding: 0px;
+    border-radius: 30px;
+}
+#labelIngresar{
+    font-size: 1.5em;
+}
+.footer{
+    text-align: center;
+    background-color: rgba(0, 110, 255, 0.521);
+}
+.iconLogin{
+    width: 2.5em;
+        height: 2.5em;
+}
+.iconLogin{
+    animation-name: deslizarHaciaDerecha;
+    animation-duration: 5s;
+}
+@keyframes deslizarHaciaDerecha{
+    from{
+    }
+    20%{
+        transform: rotateZ(45deg);
+        color:red; 
+    }
+    30%{
+        color:blue; 
+    }
+    30%{
+        color:green;
+        }
+    to{
+        transform: rotateZ(45deg);
+        margin-left: 140%;
+    }
+}
+.animacionSeleccion:hover{
+animation-duration: 4s;
+animation-name: seleccion;
+animation-delay: 3s;
+}
+#divScaner{
+    width: 8px;
+    height: 5em;
+    top:15%;
+    background-color: rgba(255, 0, 0, 0.322);
+    z-index: 300;
+    position: absolute;
+    border-radius: 30px;
+    animation-duration: 4s;
+    animation-name: scanerUsers;
+}
+#labelIngresar{
+    font-family: 'Tangerine', serif;
+    font-size:  30px;
+    font-weight: bold;
+}
+.inputMail,.inputPassword{
+    font-family: 'Tangerine', serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+@keyframes seleccion{
+    from{
+        background-color: rgba(128, 128, 128, 0.418);
+    }
+    85%{
+        border-radius: 100%;
+        background-color: rgba(0, 0, 255, 0.345);
+    }
+    to{
+        background-color: rgba(0, 255, 0, 0.345);
+    }
+}
+@keyframes scanerUsers{
+    from{
+        margin-left: 0;
+    }
+    to{
+        margin-left: 90%;
+    }
+}

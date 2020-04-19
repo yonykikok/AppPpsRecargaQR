@@ -1,0 +1,43 @@
+<ion-grid class="background-image">
+</ion-grid>
+<ion-content>
+  <ion-card id="cardLogin">
+    </ion-card>
+    <ion-card>
+      <ion-card-content id="contenedorAccesoRapido">
+        <ion-grid>
+          <ion-row>
+            <div id="divScaner" *ngIf="escanear"></div>
+            <ion-col *ngFor="let usuario of usuarios">
+              <img class="iconUserLogin animacionSeleccion"  (click)="cargarUsuarioEnInput(usuario)"
+                src="../../assets/images/{{usuario.perfil}}.png" alt="imagen {{usuario.perfil}}">
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-card-content>
+    </ion-card>
+    <ion-card-content>
+      <ion-list class="listaInputs">
+        <ion-item class="inputLogin">
+          <ion-input class="inputMail" type="email" [(ngModel)]="user.email" placeholder="Correo"
+            value="{{usuarioSeleccionado.email}}"> </ion-input>
+        </ion-item>
+
+        <ion-item class="inputLogin">
+          <ion-input class="inputPassword" type="password" [(ngModel)]="user.password" placeholder="Contraseña"
+            value="{{usuarioSeleccionado.password}}">
+          </ion-input>
+        </ion-item>
+
+      </ion-list>
+      <label id="labelIngresar" *ngIf="!ingresar" (click)="OnLogin()" >Entrar</label> 
+      <ion-icon *ngIf="ingresar" name="jet" class="iconLogin" ></ion-icon>
+    </ion-card-content>
+
+</ion-content>
+<div class="footer">
+  <ion-label>No tenes cuenta?</ion-label>
+  <ion-button size="small" color="secondary"
+    class="ion-color ion-color-secondary ios button button-small button-solid ion-activatable ion-focusable hydrated buttonLarge"
+    routerLink="/register">Registrate aqui</ion-button>
+</div>

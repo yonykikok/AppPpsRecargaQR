@@ -1,0 +1,48 @@
+<ion-content>
+  <ion-grid>
+    <ion-row>
+      <ion-col size="2">
+        <img class="imgIcon lluviaDelay3s" src="../assets/images/moneda.png" alt="">
+      </ion-col>
+      <ion-col size="2">
+        <img class="imgIcon lluviaDelay25s" src="../assets/images/moneda.png" alt="">
+      </ion-col>
+      <ion-col size="2">
+        <img class="imgIcon lluviaDelay3s" src="../assets/images/moneda.png" alt="">
+      </ion-col>
+      <ion-col size="2">
+        <img class="imgIcon lluviaDelay4s" src="../assets/images/moneda.png" alt="">
+      </ion-col>
+      <ion-col size="2">
+        <img class="imgIcon lluviaDelay1s" src="../assets/images/moneda.png" alt="">
+      </ion-col>
+      <ion-col size="2">
+        <img class="imgIcon lluviaDelay2s" src="../assets/images/moneda.png" alt="">
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <div id="custom-overlay" [style.display]="splash ? 'flex': 'none'">
+          <div class="flb">
+            <div id="divScanner">
+            </div>
+              <img id="imgGunScan" src="../assets/images/gunScan.png" alt="">
+              <h1 id="h1Name">H.J.N</h1>
+              <h1 id="h1Title">Carga de credito</h1>
+            <div>
+              <img id="imgDinero" src="../assets/images/currency.png" alt="dinero">
+            </div>
+            <div class="Aligner-item Aligner-item--top"></div>
+            <img id="imgSplash" src="../assets/images/qr.png">
+            <div class="Aligner-item Aligner-item--bottom"></div>
+          </div>
+        </div>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
+<ion-app>
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>

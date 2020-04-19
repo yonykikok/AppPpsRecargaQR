@@ -1,0 +1,227 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+  } 
+#custom-overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+     z-index: 2;
+    width:100%;
+    background-color: #002a3e;
+  }
+  
+  .flb {
+    background-color: #3ebffb;
+    height:100%;
+    width:100%;
+    animation: pulse 1s linear forwards;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .Aligner-item {
+    max-width: 50%;
+  }
+  .Aligner-item--top {
+    align-self: flex-start;
+  }
+  .Aligner-item--bottom {
+    align-self: flex-end;
+  }
+//   #custom-overlay img {
+//     display: block;
+//     margin: 0 auto;
+//     width: 50%;
+//     height: auto;
+//     animation: animation 3100ms linear infinite both;
+//     animation-delay: 1s;
+//   }
+ 
+#imgGunScan{
+  position: absolute;
+  width: 500%;
+  margin-left: -7%;
+  margin-top: -15%;
+  animation-duration: 6s;
+  animation-delay: 1s;
+  animation-name: gunScan;
+    transform: rotateY(180deg);
+    z-index: 3000;
+  // animation-duration: 6s;
+  // animation-name: gunScan;
+}
+@keyframes gunScan{
+  from{
+    margin-top:-3.9em;
+  }
+  
+  to{
+    margin-top:6.2em;
+  }
+}
+  #imgSplash{
+      width: 10em;
+      height: 10em;
+  }
+  .imgIcon{
+    position: absolute;
+    top:-5em;
+    z-index: 111;
+    width: 3em;
+    height: 3em;
+  }
+
+  .lluviaDelay1s{
+      animation-delay: 1.8s;
+      animation-duration: 4s;
+      animation-name: lluvia;
+  }
+  .lluviaDelay2s{
+    animation-delay: 2s;
+    animation-duration: 4s;
+    animation-name: lluvia;
+}
+
+.lluviaDelay25s{
+    animation-delay: 2.5s;
+    animation-duration: 4s;
+    animation-name: lluvia;
+}
+.lluviaDelay3s{
+    animation-delay: 3s;
+    animation-duration: 4s;
+      animation-name: lluvia;
+}
+.lluviaDelay4s{
+    animation-delay: 4s;
+    animation-duration: 4s;
+      animation-name: lluvia;
+}
+
+#divScanner{
+    position: absolute;
+    top:35%;
+    border-radius: 30px;
+    height: 1em;
+    width: 12em;
+    z-index: 1221;
+    background-color: rgba(255, 0, 0, 0.692);
+    border: 1px solid rgba(255, 0, 0, 0.692);
+    animation-duration: 6s;
+    animation-delay: 1s;
+    animation-name: scanearQr;
+}
+#h1Title{
+    z-index: 130;
+    position: absolute;
+    margin-top: -80%;
+    font-family: 'Tangerine', serif;
+        font-size: 60px;
+        font-weight: bold;
+        animation-duration: 3s;
+        animation-name: EntraDesdeIzquierda;
+}
+#h1Name{
+    z-index: 130;
+    position: absolute;
+    margin-top: 70%;
+    
+    font-family: 'Tangerine', serif;
+        font-size: 48px;
+        
+        animation-duration: 3s;
+        animation-name: EntraDesdeDerecha;
+}
+@keyframes EntraDesdeIzquierda{
+    from{
+        margin-left: 100%;
+        width: 100%;
+    }
+    to{
+        width: 100%;
+        margin-left: 18.5%;
+    }
+}
+@keyframes EntraDesdeDerecha{
+    from{
+        margin-left: -100%;
+        width: 100%;
+    }
+    to{
+        width: 100%;
+        margin-left: 32%;
+    }
+}
+#imgDinero{
+    position: absolute;
+    top:68%;
+    left: 75%;
+    width: 5em;
+    height: 5em;
+}
+#imgDinero{
+    z-index: -10;
+    animation-delay: 4s;
+    animation-duration: 4s;
+    animation-name: aparicion;
+}
+
+@keyframes aparicion{
+    from{
+        z-index: -10;
+        opacity: 0;
+
+    }
+    30%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0.5;
+        z-index: 300;
+        width: 5.5em;
+        height: 5.5em;
+    }
+    40%{
+        opacity: 0.5;
+        z-index: 300;
+        width: 5em;
+        height: 5em;
+    }
+    50%{
+        z-index: 300;
+        opacity: 0.8;
+    }
+    to{
+        z-index: 300;
+        opacity: 1;
+    }
+}
+
+@keyframes scanearQr{
+    from{
+      margin-top:0%;
+    }
+    30%{
+        height: 1.4em;
+        width: 13em;
+      
+    }
+    60%{
+    }
+    to{
+      margin-top:10.2em;
+
+    }
+}
+  @keyframes lluvia{
+      from{
+        margin-top:-3em;
+        transform: rotateY(180deg);
+      }
+      to{
+        margin-top:50em;
+
+      }
+  }

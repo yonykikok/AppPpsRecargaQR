@@ -1,0 +1,100 @@
+.inputTest{
+    position: absolute;
+    z-index: 99999999;
+    left: 0%;
+    top: 1%;
+}
+.buttonTest{
+    position: absolute;
+    z-index: 99999999;
+    left: 70%;
+    top: 1%;
+}
+#btnScan{
+    animation-name: scan;
+    animation-duration: 5s;
+}
+#pCreditoActual{
+    font-size: 200%;
+    font-weight: bold;
+}
+#creditoNulo{
+    font-size: 600%;
+    color: red;
+}
+
+#creditoBajo{
+    font-size: 600%;
+    color: orange;
+}
+#creditoAlto{
+    font-size: 600%;
+    color: green;
+}
+#informacionQr{
+    animation-name: ingresaDesdeDerecha;
+    animation-duration: 8s;
+}
+.centrado{
+    text-align: center;
+}
+ion-toolbar{
+    text-align: center;
+    --background:none;
+    background: rgba(0, 0, 255, 0.500);
+    color: white;
+}
+img{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 12em;
+    height: 12em;
+    animation-name: zoom;
+    animation-duration: 9s;
+}
+@keyframes zoom{
+    from{
+        width: 0em;
+        height: 0em;
+        border-radius: 100%;
+    }
+    20%{
+        background-color: rgba(0, 0, 255, 0.342);
+    }
+    50%{
+        width: 6em;
+        height: 6em;    
+        border-radius: 50%;
+        background-color: rgba(0, 128, 0, 0.336);
+    }
+    80%{
+
+        background-color: rgba(255, 0, 0, 0.150);
+    }
+    to{
+        border-radius: 0%;
+        width: 12em;
+        height: 12em; 
+    }
+}
+@keyframes ingresaDesdeDerecha{
+    from{
+        margin-left: 100%;
+    }
+    50%{
+        margin-left: 100%;
+
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+@keyframes scan{
+    from{
+        margin-top: 1000px;
+    }
+    to{
+        margin-top: 0px;
+    }
+}
