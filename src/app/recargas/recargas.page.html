@@ -4,11 +4,11 @@
   </ion-toolbar>
 </ion-header>
 <ion-content class="centrado">
-  <h4>Scan</h4>
+  <h4 (click)="scanCode()">ESCANEAR QR</h4>
   <ion-item class="centrado" size="6">
     <img src="../../assets/images/qrsinfondo.png" (click)="scanCode()" alt="codigo QR">
   </ion-item>
-  <p id="pCreditoActual">Credito Actual</p>
+  <p id="pCreditoActual">Crédito Actual</p>
   <p *ngIf="creditoActual==0 || creditoActual==-1" id="creditoNulo">${{creditoActual}}</p>
   <p *ngIf="creditoActual>0 && creditoActual<=50" id="creditoBajo">${{creditoActual}}</p>
   <p *ngIf="creditoActual>50" id="creditoAlto">${{creditoActual}}</p>
